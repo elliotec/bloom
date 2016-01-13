@@ -25,7 +25,6 @@ gem 'pry-rails'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
-gem 'refills'
 gem 'high_voltage'
 gem 'flutie'
 
