@@ -35,10 +35,7 @@ header.navigation {
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
-    position: relative;
     z-index: 9999;
-    min-width:100%;
-    background-color: $navigation-background;
   }
 
   .logo {
@@ -267,14 +264,15 @@ header.navigation {
   // Elements on the far right
 
   .navigation-tools {
-    background: #505050;
-    clear: both;
+    /*background: #505050;*/
+    display: none;
+    @include media($large-screen) {
+    /*clear: both;*/
     display: block;
     height: $navigation-height;
     padding-left: $navigation-padding / 2;
     padding-right: $navigation-padding;
 
-    @include media($large-screen) {
       background: transparent;
       clear: none;
       float: right;
