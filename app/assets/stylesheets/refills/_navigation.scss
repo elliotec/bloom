@@ -35,6 +35,7 @@ header.navigation {
     @include clearfix;
     @include outer-container;
     z-index: 9999;
+    max-width: 80%;
   }
 
   .logo {
@@ -47,7 +48,7 @@ header.navigation {
       display:inline;
       color: #4b0082;
       position: relative;
-      bottom: 1.3em;
+      bottom: 1.5em;
       left: 0.5em;
       font-weight:700;
     }
@@ -107,7 +108,7 @@ header.navigation {
     }
 
     @include media ($horizontal-bar-mode) {
-      display: inline;
+      display: block;
       margin: 0;
       padding: 0;
     }
@@ -116,7 +117,7 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    /*background: $navigation-background;*/
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -230,7 +231,7 @@ header.navigation {
 
     .submenu {
       @include media($horizontal-bar-mode) {
-        left: $navigation-submenu-width - 0.2em;
+        left: $navigation-submenu-width;
         top: 0;
       }
     }
