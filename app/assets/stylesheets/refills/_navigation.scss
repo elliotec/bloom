@@ -9,12 +9,11 @@ header.navigation {
   a {
     text-decoration: none;
   }
-  //////////////////////////////////////////////////////////////////////////////////
 
   $navigation-padding: 1em;
   $navigation-color: $dark-gray;
-  $navigation-background: transparentize(white, 0.1);
-  $navigation-color-hover: lighten($dark-gray, 40%);
+  $navigation-background: transparentize(white, 0.4);
+  $navigation-color-hover: lighten($dark-gray, 20%);
   $navigation-height: 60px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: darken($navigation-background, 10%);
