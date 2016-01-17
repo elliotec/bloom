@@ -2,14 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*.video-wrapper{*/
-/*  .welcome-vid{*/
-/*    position: absolute;*/
-/*    top:50%;*/
-/*    left: 50%;*/
-/*    z-index:-1;*/
-/*    transform: translate(-50%, -50%);*/
-/*    [>min-width:100%;<]*/
-/*    [>min-height:100%;<]*/
-/*  }*/
-/*}*/
+.welcome-wrapper{
+  position: relative;
+  .form-wrap {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    .coming-soon {
+      font-size: 1.5em;
+      @include media($medium-screen){
+        font-size: 2.5em;
+      }
+      color: white;
+      text-align: center;
+    }
+    .form-inputs, .form-actions {
+      max-width: 188px;
+      margin: 0 auto;
+      opacity: 0.8;
+    }
+  }
+}
+
