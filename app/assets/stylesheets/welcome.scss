@@ -6,14 +6,18 @@
   position: relative;
   .form-wrap {
     position: absolute;
-    top:50%;
+    top:45%;
     left:50%;
     transform: translate(-50%, -50%);
     .coming-soon {
-      font-size: 1.5em;
+      font-size: 1.25em;
       @include media($medium-screen){
         font-size: 2.5em;
       }
+      color: white;
+      text-align: center;
+    }
+    p {
       color: white;
       text-align: center;
     }

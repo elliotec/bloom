@@ -3,9 +3,9 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
-  #def index
-  #  @users = User.all
-  #end
+  def index
+    @users = User.all
+  end
 
   # GET /users/1
   # GET /users/1.json
@@ -28,7 +28,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to url_for(controller: :welcome, action: :index), notice: 'User was successfully created.' }
+        UserMailer.welcome_email(@user).deliver_now
+
+        format.html { redirect_to url_for(controller: :welcome, action: :index), notice: 'Thanks! We will keep you updated.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
