@@ -29,6 +29,7 @@ gem 'flutie'
 gem 'rails_12factor'
 gem 'simple_form'
 gem 'figaro'
+gem 'casein'
 
 group :development, :test do
   # call 'byebug' anywhere in the code to stop execution and get a debugger console
