@@ -180,6 +180,7 @@ header.navigation {
       @include position(absolute, auto -0.8em auto auto);
       content: '•';
       color: $navigation-color;
+      cursor: default;
     }
   }
 
