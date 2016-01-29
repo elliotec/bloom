@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  resources :products
+	#Casein routes
+	namespace :casein do
+		resources :products
+	end
+
+  resources :products
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

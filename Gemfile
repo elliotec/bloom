@@ -29,6 +29,7 @@ gem 'flutie'
 gem 'rails_12factor'
 gem 'simple_form'
 gem 'figaro'
+gem 'paperclip'
 gem 'casein'
 
 group :development, :test do
