@@ -11,7 +11,6 @@
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
 
-  margin-top: -50px;
   p {
     line-height: 1.5em;
   }
@@ -24,10 +23,10 @@
   $grid-items-background: $base-background-color;
   $grid-item-background: $base-background-color;
   $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
-  $grid-item-columns: 4;
+  $grid-item-columns: 3;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
-  $grid-item-height: 14em;
+  $grid-item-height: 30em;
 
   @include clearfix;
   position: relative;
@@ -57,9 +56,8 @@
 
   .grid-item img {
       display: block;
-      height: 2.5em;
+      height: 19em;
       margin-bottom: 1.2em;
-      opacity: 0.2;
     }
 
   .grid-item h1 {
