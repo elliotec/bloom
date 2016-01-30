@@ -45,7 +45,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'refills'
   gem 'web-console', '~> 2.0'
-  #gem 'thin'
   gem 'rack'
   gem 'rack-livereload'
   gem 'guard'
