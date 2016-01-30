@@ -1,0 +1,1237 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 4, /home/elliotec/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /home/elliotec/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 27, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 31, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_buttons.scss */
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 14, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 20, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+/* line 27, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 41, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+select[multiple]:hover {
+  border-color: #b1b1b1;
+}
+/* line 45, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+select[multiple]:focus {
+  border-color: #1565c0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  outline: none;
+}
+/* line 51, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+select[multiple]:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 55, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+select[multiple]:disabled:hover {
+  border: 1px solid #ddd;
+}
+
+/* line 61, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 65, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+[type="search"] {
+  appearance: none;
+}
+
+/* line 69, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 75, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 80, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 11, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: 600;
+  margin-top: 0.75em;
+}
+/* line 16, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 8, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 20, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 24, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+/* line 29, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #104c90;
+}
+
+/* line 36, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+/* line 44, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+  min-height: 60px;
+  width: 100%;
+  z-index: 999;
+}
+/* line 9, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation a {
+  text-decoration: none;
+}
+/* line 34, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .navigation-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+}
+/* line 20, /home/elliotec/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 20, /home/elliotec/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 40, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .logo {
+  float: left;
+  max-height: 60px;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+/* line 46, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .logo p {
+  display: inline;
+  color: #4b0082;
+  position: relative;
+  bottom: 1.3em;
+  left: 0.5em;
+  font-weight: 700;
+}
+/* line 55, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .logo img {
+  max-height: 60px;
+  padding: 0.8em 0;
+}
+/* line 63, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .navigation-menu-button {
+  color: #333;
+  display: block;
+  float: right;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+  padding-right: 1em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 900px) {
+  /* line 63, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation .navigation-menu-button {
+    display: none;
+  }
+}
+/* line 77, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+  color: #666666;
+}
+/* line 85, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation nav {
+  float: none;
+  min-height: 60px;
+  z-index: 9999999;
+}
+@media screen and (min-width: 900px) {
+  /* line 85, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation nav {
+    float: right;
+  }
+}
+/* line 95, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul.navigation-menu {
+  -webkit-transform-style: preserve-3d;
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 105, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul.navigation-menu.show {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  /* line 95, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.navigation-menu {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* line 118, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul li.nav-link {
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  line-height: 60px;
+  overflow: hidden;
+  padding-right: 0.8em;
+  text-align: right;
+  width: 100%;
+  z-index: 9999;
+}
+@media screen and (min-width: 900px) {
+  /* line 118, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    line-height: 60px;
+    text-decoration: none;
+    width: auto;
+  }
+}
+/* line 136, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul li.nav-link a {
+  color: #333;
+  display: inline-block;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  /* line 136, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul li.nav-link a {
+    padding-right: 1em;
+  }
+}
+/* line 145, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+  color: #666666;
+}
+/* line 152, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation .active-nav-item a {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  padding-bottom: 3px;
+}
+/* line 159, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more.nav-link {
+  padding-right: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 159, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 1em;
+  }
+}
+/* line 166, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more.nav-link > ul > li:first-child a {
+  padding-top: 1em;
+  margin-top: 1em;
+}
+/* line 171, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more.nav-link a {
+  margin-right: 1em;
+}
+/* line 175, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more.nav-link > a {
+  padding-right: 0.6em;
+}
+/* line 179, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more.nav-link > a:after {
+  position: absolute;
+  top: auto;
+  right: -0.8em;
+  bottom: auto;
+  left: auto;
+  content: '•';
+  color: #333;
+  cursor: default;
+}
+/* line 187, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more {
+  overflow: visible;
+  padding-right: 0;
+}
+/* line 191, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more a {
+  padding-right: 0.8em;
+}
+/* line 195, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more > a {
+  padding-right: 1.6em;
+  position: relative;
+}
+@media screen and (min-width: 900px) {
+  /* line 195, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation li.more > a {
+    margin-right: 1em;
+  }
+}
+/* line 203, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more > a:after {
+  font-size: 1.2em;
+  position: absolute;
+  right: 0.5em;
+}
+/* line 210, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  /* line 187, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation li.more {
+    padding-right: 0.8em;
+    position: relative;
+  }
+}
+/* line 221, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul.submenu {
+  display: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 221, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu {
+    left: -1em;
+    position: absolute;
+    top: 1.5em;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 231, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu .submenu {
+    left: 11.8em;
+    top: 0;
+  }
+}
+/* line 238, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul.submenu li {
+  display: block;
+  padding-right: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 238, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu li {
+    line-height: 46.15384615px;
+  }
+  /* line 245, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu li:first-child > a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  /* line 250, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu li:last-child > a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: 0.7em;
+  }
+}
+/* line 257, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+header.navigation ul.submenu li a {
+  background-color: rgba(247, 247, 247, 0.6);
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 257, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_navigation.scss */
+  header.navigation ul.submenu li a {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 1em;
+    text-align: left;
+    width: 12em;
+  }
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_video.scss */
+.video-wrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  z-index: -1;
+}
+@media screen and (min-width: 900px) {
+  /* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_video.scss */
+  .video-wrapper {
+    bottom: 60px;
+  }
+}
+/* line 10, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_video.scss */
+.video-wrapper embed,
+.video-wrapper object,
+.video-wrapper .welcome-vid {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 {
+  background: #999999;
+  padding: 1.5em;
+  width: 100%;
+  display: inline-block;
+}
+/* line 7, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+/* line 13, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 li {
+  list-style: none;
+}
+/* line 17, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 a {
+  text-decoration: none;
+}
+/* line 31, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-logo {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 31, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+  .footer-2 .footer-logo {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+/* line 41, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-logo img {
+  height: 1.6em;
+}
+/* line 45, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 ul {
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 45, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+  .footer-2 ul {
+    float: left;
+    line-height: 1.8em;
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+}
+/* line 56, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 ul li {
+  font-weight: 800;
+  padding-right: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 56, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+  .footer-2 ul li {
+    display: inline;
+    text-align: left;
+  }
+}
+/* line 66, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 ul li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 69, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 ul li a:focus, .footer-2 ul li a:hover {
+  color: white;
+}
+@media screen and (min-width: 900px) {
+  /* line 75, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+  .footer-2 .footer-secondary-links {
+    float: right;
+  }
+}
+/* line 80, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links li {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+/* line 85, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links ul.footer-social {
+  margin-top: 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 85, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    float: right;
+    margin-top: 0;
+  }
+}
+/* line 93, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links ul.footer-social li {
+  font-size: 1em;
+  float: left;
+  line-height: 0;
+  padding-right: 0.7em;
+}
+/* line 99, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links ul.footer-social li:last-child {
+  padding-right: 0;
+}
+/* line 104, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links ul.footer-social img {
+  height: 1.6em;
+  opacity: 0.7;
+  padding: 1px;
+}
+/* line 109, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_footer-2.scss */
+.footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
+  opacity: 1;
+}
+
+/* line 5, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines {
+  margin-top: -50px;
+  position: relative;
+}
+/* line 15, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines p {
+  line-height: 1.5em;
+}
+/* line 19, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines a {
+  text-decoration: none;
+}
+/* line 20, /home/elliotec/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-items-lines::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 35, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+  cursor: pointer;
+  float: left;
+  height: 14em;
+  overflow: hidden;
+  outline: none;
+  padding: 2em;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 35, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+  .grid-items-lines .grid-item {
+    width: 33.33333333%;
+  }
+}
+/* line 52, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .grid-item:focus, .grid-items-lines .grid-item:hover {
+  background: rgba(51, 51, 51, 0.05);
+}
+/* line 58, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .grid-item img {
+  display: block;
+  height: 2.5em;
+  margin-bottom: 1.2em;
+  opacity: 0.2;
+}
+/* line 65, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .grid-item h1 {
+  color: #333;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+/* line 71, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .grid-item p {
+  color: rgba(51, 51, 51, 0.6);
+}
+@media screen and (min-width: 600px) {
+  /* line 71, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+  .grid-items-lines .grid-item p {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 79, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+  .grid-items-lines .grid-item-big {
+    width: 66.66666667%;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 83, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+  .grid-items-lines .grid-item-big p {
+    max-width: 60%;
+  }
+}
+/* line 91, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .bottom-cover {
+  background: #fff;
+  bottom: 0px;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+}
+/* line 99, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/refills/_grid-items-lines.scss */
+.grid-items-lines .right-cover {
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  width: 4px;
+}
+
+/* line 5, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+.welcome-wrapper {
+  position: relative;
+}
+/* line 7, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+.welcome-wrapper .form-wrap {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 12, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+.welcome-wrapper .form-wrap .coming-soon {
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  /* line 12, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+  .welcome-wrapper .form-wrap .coming-soon {
+    font-size: 2.5em;
+  }
+}
+/* line 20, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+.welcome-wrapper .form-wrap p {
+  color: white;
+  text-align: center;
+}
+/* line 24, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/welcome.scss */
+.welcome-wrapper .form-wrap .form-inputs, .welcome-wrapper .form-wrap .form-actions {
+  max-width: 188px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
