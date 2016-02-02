@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+  resources :juices
   resources :products
 	#Casein routes
 	namespace :casein do
+		resources :juices
 		resources :products
 	end
 
@@ -60,6 +62,5 @@ Rails.application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  #     #   end
 end

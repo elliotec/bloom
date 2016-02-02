@@ -1,10 +1,10 @@
 <div class="grid-items-lines">
-  <% @products.each do |product| %>
-    <%= link_to product, class: 'grid-item' do %>
-      <%= image_tag product.photo.url(:medium) %>
-      <h1><%= product.name %></h1>
-      <p><%=  product.description %></p>
-      <p>$<%=  product.price %>0</p>
+  <% @juices.each do |juice| %>
+    <%= link_to juice, class: 'grid-item' do %>
+      <%= image_tag juice.photo.url(:medium) %>
+      <h1><%= juice.name %></h1>
+      <p><%= juice.short_description %></p>
+      <p>$<%= juice.price %>0</p>
     <% end %>
   <% end %>
   <div class="right-cover"></div>

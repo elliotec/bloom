@@ -1,0 +1,26 @@
+<p>
+  <strong>Name:</strong>
+  <%= @juice.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @juice.long_description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @juice.price %>
+</p>
+<p>
+  <strong>Ingredients:</strong>
+  <%= @juice.ingredients%>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+    <%= image_tag @juice.photo.url(:medium) %>
+</p>
+
+
+
