@@ -1,0 +1,8 @@
+/* CASEIN CUSTOM */
+/* Use this file for your project-specific Casein CSS */
+/* line 5, /home/elliotec/Dropbox/bloomjuice/app/assets/stylesheets/casein/custom.css.scss */
+.navbar-brand img {
+  height: 100px;
+  position: relative;
+  bottom: 50px;
+}

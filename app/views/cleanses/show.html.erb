@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cleanse.name %>
+</p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @cleanse.short_description %>
+</p>
+
+<p>
+  <strong>Long description:</strong>
+  <%= @cleanse.long_description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @cleanse.price %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @cleanse.ingredients %>
+</p>
+
+<%= link_to 'Edit', edit_cleanse_path(@cleanse) %> |
+<%= link_to 'Back', cleanses_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cleanses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Short description</th>
+      <th>Long description</th>
+      <th>Price</th>
+      <th>Ingredients</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cleanses.each do |cleanse| %>
+      <tr>
+        <td><%= cleanse.name %></td>
+        <td><%= cleanse.short_description %></td>
+        <td><%= cleanse.long_description %></td>
+        <td><%= cleanse.price %></td>
+        <td><%= cleanse.ingredients %></td>
+        <td><%= link_to 'Show', cleanse %></td>
+        <td><%= link_to 'Edit', edit_cleanse_path(cleanse) %></td>
+        <td><%= link_to 'Destroy', cleanse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cleanse', new_cleanse_path %>

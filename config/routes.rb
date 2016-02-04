@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :cleanses
   resources :juices
   resources :products
 	#Casein routes
 	namespace :casein do
+		resources :cleanses
 		resources :juices
 		resources :products
 	end

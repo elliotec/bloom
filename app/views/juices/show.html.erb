@@ -1,26 +1,27 @@
-<p>
-  <strong>Name:</strong>
-  <%= @juice.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @juice.long_description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @juice.price %>
-</p>
-<p>
-  <strong>Ingredients:</strong>
-  <%= @juice.ingredients%>
-</p>
-
-<p>
-  <strong>Photo:</strong>
+<section class="juice-wrapper">
+  <div class="juice-photo">
     <%= image_tag @juice.photo.url(:medium) %>
-</p>
+  </div>
 
+  <div class="juice-info">
+    <p>
+    <strong><%= @juice.name %></strong>
+    </p>
+
+    <p>
+    <%= @juice.ingredients%>
+    </p>
+
+    <p>
+    <%= @juice.long_description %>
+    </p>
+
+    <p>
+   $<%= @juice.price %>0
+    </p>
+
+  </div>
+
+</section>
 
 

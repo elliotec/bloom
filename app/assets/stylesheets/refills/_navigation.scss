@@ -12,14 +12,12 @@ header.navigation {
 
   $navigation-padding: 1em;
   $navigation-color: $dark-gray;
-  $navigation-background: transparentize(white, 0.4);
+  $navigation-background: transparentize(white, 0.2);
   $navigation-color-hover: lighten($dark-gray, 20%);
-  $navigation-height: 60px;
+  $navigation-height: 90px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: darken($navigation-background, 10%);
   $navigation-nav-button-border: 1px solid darken($navigation-nav-button-background, 20%);
-  $navigation-search-background: darken($navigation-color, 5%);
-  $navigation-search-border: 1px solid darken($navigation-background, 5);
   $navigation-active-link-color: transparentize($dark-gray, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
@@ -43,18 +41,9 @@ header.navigation {
     padding-left: $navigation-padding;
     padding-right: 2em;
 
-    p {
-      display:inline;
-      color: $indigo;
-      position: relative;
-      bottom: 1.3em;
-      left: 0.5em;
-      font-weight:700;
-    }
-
     img {
       max-height: $navigation-height;
-      padding: 0.8em 0;
+      /*padding: 0.8em 0;*/
     }
   }
 
@@ -178,7 +167,10 @@ header.navigation {
 
     > a:after {
       @include position(absolute, auto -0.8em auto auto);
-      content: '•';
+
+      @include media($large-screen){
+        content: '•';
+      }
       color: $navigation-color;
       cursor: default;
     }
@@ -225,7 +217,7 @@ header.navigation {
     @include media($horizontal-bar-mode) {
       left: -$navigation-submenu-padding;
       position: absolute;
-      top: 1.5em;
+      top: 2.5em;
     }
 
     .submenu {
