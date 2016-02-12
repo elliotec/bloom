@@ -3,9 +3,6 @@
   padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
   position: relative;
   z-index: -1;
-  @include media($large-screen){
-    bottom: 90px;
-  }
 
   embed,
   object,

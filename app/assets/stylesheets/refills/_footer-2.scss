@@ -3,6 +3,7 @@
   $base-accent-color: #333 !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
+  border-top: 1px solid #ddd;
 
   ul {
     margin: 0;
@@ -18,8 +19,8 @@
     text-decoration: none;
   }
 
-  $footer-background: desaturate(lighten($base-accent-color, 40%), 30%);
-  $footer-color: white;
+  $footer-background: white;
+  $footer-color: $dark-gray;
   $footer-link-color: transparentize($footer-color, 0.2);
   $footer-disclaimer-color: transparentize($footer-color, 0.4);
 

@@ -9,6 +9,9 @@
     @include media($medium-screen){
       top:35%;
     }
+    @include media($large-screen){
+      top:20%;
+    }
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -27,7 +30,6 @@
     .form-inputs, .form-actions {
       max-width: 188px;
       margin: 0 auto;
-      opacity: 0.8;
     }
   }
 }
