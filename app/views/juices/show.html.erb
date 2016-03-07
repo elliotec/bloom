@@ -4,24 +4,18 @@
   </div>
 
   <div class="juice-info">
-    <p>
-    <strong><%= @juice.name %></strong>
-    </p>
+    <h1><%= @juice.name %></h1>
 
-    <p>
-    <%= @juice.ingredients%>
-    </p>
+    <h3>$<%= @juice.price %>0</h3>
 
-    <p>
-    <%= @juice.long_description %>
-    </p>
+    <p><%= @juice.ingredients%></p>
 
-    <p>
-   $<%= @juice.price %>0
-    </p>
+    <p><%= @juice.long_description %></p>
 
+    <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and recieve your deposit back.</small></p>
+
+    <p><small>16oz / 543ml</small></p>
   </div>
-
 </section>
 
 

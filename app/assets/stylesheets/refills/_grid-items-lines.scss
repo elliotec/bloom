@@ -33,7 +33,7 @@
 
   .grid-item {
     @include transition (all 0.2s ease-in-out);
-    background: $grid-item-background;
+    /*background: $grid-item-background;*/
     /*border-bottom: $grid-item-border;*/
     /*border-right: $grid-item-border;*/
     cursor: pointer;
@@ -41,7 +41,7 @@
     height: $grid-item-height;
     overflow: hidden;
     outline: none;
-    padding: 2em;
+    padding: 3em;
     width: 100%;
 
     @include media($large-screen) {
