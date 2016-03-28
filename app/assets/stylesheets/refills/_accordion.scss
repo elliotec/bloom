@@ -1,4 +1,4 @@
-.cleanse-faq{
+.cleanse-faq {
   @include outer-container;
   h2 {
     text-align: center;
@@ -24,6 +24,12 @@
 
   li {
     list-style: none;
+  }
+  ul.bullet li {
+    list-style-type: disc;
+    border:none;
+    padding-top: 0.5em;
+    margin-left: 1em;
   }
 
   p {
@@ -76,13 +82,7 @@
       background-color: $accordion-menu-sub-background;
 
       &:first-child {
-        border-top: $accordion-menu-border;
         box-shadow: inset 0 1px 1px $accordion-menu-sub-inset;
-      }
-
-      &:focus,
-      &:hover {
-        background-color: $accordion-menu-sub-hover;
       }
     }
   }

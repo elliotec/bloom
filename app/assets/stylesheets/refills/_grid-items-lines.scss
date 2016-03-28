@@ -22,7 +22,6 @@
 
   $grid-items-background: $base-background-color;
   $grid-item-background: $base-background-color;
-  /*$grid-item-border: 1px solid transparentize($base-font-color, 0.8);*/
   $grid-item-columns: 3;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
@@ -33,9 +32,6 @@
 
   .grid-item {
     @include transition (all 0.2s ease-in-out);
-    /*background: $grid-item-background;*/
-    /*border-bottom: $grid-item-border;*/
-    /*border-right: $grid-item-border;*/
     cursor: pointer;
     float: left;
     height: $grid-item-height;
@@ -46,12 +42,6 @@
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
-    }
-
-    &:focus,
-    &:hover {
-      background: transparentize($grid-item-color, 0.97);
-      border-radius: 45%;
     }
   }
 
