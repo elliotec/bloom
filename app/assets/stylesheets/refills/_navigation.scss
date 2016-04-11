@@ -157,9 +157,9 @@ header.navigation {
       padding-right: $navigation-submenu-padding;
     }
 
-    > ul > li:first-child a  {
-      padding-top: 1em;
-    }
+    /*> ul > li:first-child a  {*/
+    /*  padding-top: 1em;*/
+    /*}*/
 
     > a {
       padding-right: 0.6em;
@@ -230,7 +230,7 @@ header.navigation {
       padding-right: 0;
 
       @include media($horizontal-bar-mode) {
-        line-height: $nav-height-large-screen / 3;
+        line-height: $nav-height-large-screen / 3.5;
 
         &:first-child > a {
           border-top-left-radius: $base-border-radius;
