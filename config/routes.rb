@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
+  resources :featured_artists
   resources :cleanses
 
   resources :juices
   resources :products
 	#Casein routes
 	namespace :casein do
+		resources :featured_artists
 		resources :cleanses
 		resources :juices
 		resources :products
@@ -18,6 +20,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
+  get 'featured_artist/current' => 'featured_artist#current'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

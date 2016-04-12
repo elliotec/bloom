@@ -1,0 +1,21 @@
+<section class="featured_artist-wrapper">
+  <div class="featured_artist-photo">
+    <%= image_tag @featured_artist.photo.url(:large) %>
+  </div>
+  <div class="featured_artist-photo">
+    <%= image_tag @featured_artist.photo2.url(:large) %>
+  </div>
+
+  <div class="featured_artist-info">
+    <h1><%= @featured_artist.name1 %></h1>
+
+    <p><%= @featured_artist.bio1 %></p>
+
+    <h1><%= @featured_artist.name2 %></h1>
+
+	<p><%= @featured_artist.bio2 %></p>
+
+  </div>
+</section>
+
+

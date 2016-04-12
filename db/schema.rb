@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160204045941) do
+ActiveRecord::Schema.define(version: 20160412082327) do
 
   create_table "casein_admin_users", force: :cascade do |t|
     t.string   "login",                           null: false
@@ -43,6 +43,23 @@ ActiveRecord::Schema.define(version: 20160204045941) do
     t.string   "ingredients"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+  end
+
+  create_table "featured_artists", force: :cascade do |t|
+    t.string   "name1"
+    t.string   "name2"
+    t.string   "bio1"
+    t.string   "bio2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string   "photo2_file_name"
+    t.string   "photo2_content_type"
+    t.integer  "photo2_file_size"
+    t.datetime "photo2_updated_at"
   end
 
   create_table "juices", force: :cascade do |t|

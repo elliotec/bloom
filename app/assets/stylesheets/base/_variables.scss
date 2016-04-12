@@ -1,7 +1,8 @@
 // Typography
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,400italic,300italic,700italic);
-$base-font-family: 'Raleway', $helvetica, sans-serif;;
-$heading-font-family: $base-font-family;
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+$base-font-family: 'Raleway', $helvetica, sans-serif;
+$heading-font-family: 'Oxygen', $helvetica, sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
