@@ -69,6 +69,6 @@ class CleansesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cleanse_params
-      params.require(:cleanse).permit(:name, :short_description, :long_description, :price, :ingredients)
+      params.require(:cleanse).permit(:name, :short_description, :long_description, :price, :ingredients, :photo)
     end
 end

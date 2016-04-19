@@ -8,10 +8,11 @@
 			<th><%= casein_sort_link "Price", :price %></th>
 			<th><%= casein_sort_link "Ingredients", :ingredients %></th>
 			<th><%= casein_sort_link "Long description", :long_description %></th>
+			<th><%= casein_sort_link "Photo", :photo %></th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
-	
+
 	<% cleanses.each do |cleanse| %>
 		<tr>
 			<td><%= casein_table_cell_link cleanse.name, casein_cleanse_path(cleanse) %></td>
@@ -19,6 +20,7 @@
 			<td><%= casein_table_cell_link cleanse.price, casein_cleanse_path(cleanse) %></td>
 			<td><%= casein_table_cell_link cleanse.ingredients, casein_cleanse_path(cleanse) %></td>
 			<td><%= casein_table_cell_link cleanse.long_description, casein_cleanse_path(cleanse) %></td>
+			<td><%= casein_table_cell_link cleanse.photo, casein_cleanse_path(cleanse) %></td>
 			<td class="delete">
 				<%= link_to(casein_show_row_icon("trash"), casein_cleanse_path(cleanse), :method => :delete, :data => { :confirm => "Are you sure you want to delete this cleanse?" }) %>
 			</td>

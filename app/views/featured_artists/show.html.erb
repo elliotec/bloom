@@ -1,19 +1,16 @@
-<section class="featured_artist-wrapper">
-  <div class="featured_artist-photo">
-    <%= image_tag @featured_artist.photo.url(:large) %>
-  </div>
-  <div class="featured_artist-photo">
-    <%= image_tag @featured_artist.photo2.url(:large) %>
+<section class="cleanse-wrapper">
+  <div class="cleanse-photo">
+    <%= image_tag @cleanse.photo.url(:medium) %>
   </div>
 
-  <div class="featured_artist-info">
-    <h1><%= @featured_artist.name1 %></h1>
+  <div class="cleanse-info">
+    <h1><%= @cleanse.name %></h1>
 
-    <p><%= @featured_artist.bio1 %></p>
+    <h3>$<%= @cleanse.price %>0</h3>
 
-    <h1><%= @featured_artist.name2 %></h1>
+    <p><%= @cleanse.ingredients%></p>
 
-	<p><%= @featured_artist.bio2 %></p>
+    <p><%= @cleanse.long_description %></p>
 
   </div>
 </section>

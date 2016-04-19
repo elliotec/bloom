@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160412082327) do
+ActiveRecord::Schema.define(version: 20160419012620) do
 
   create_table "casein_admin_users", force: :cascade do |t|
     t.string   "login",                           null: false
@@ -41,21 +41,24 @@ ActiveRecord::Schema.define(version: 20160412082327) do
     t.string   "long_description"
     t.decimal  "price"
     t.string   "ingredients"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-  end
-
-  create_table "featured_artists", force: :cascade do |t|
-    t.string   "name1"
-    t.string   "name2"
-    t.string   "bio1"
-    t.string   "bio2"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+  end
+
+  create_table "featured_artists", force: :cascade do |t|
+    t.string   "name"
+    t.string   "bio"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo1_file_name"
+    t.string   "photo1_content_type"
+    t.integer  "photo1_file_size"
+    t.datetime "photo1_updated_at"
     t.string   "photo2_file_name"
     t.string   "photo2_content_type"
     t.integer  "photo2_file_size"
@@ -68,18 +71,6 @@ ActiveRecord::Schema.define(version: 20160412082327) do
     t.string   "long_description"
     t.decimal  "price"
     t.string   "ingredients"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string   "name"
-    t.string   "description"
-    t.decimal  "price"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "photo_file_name"
