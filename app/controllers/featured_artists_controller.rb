@@ -13,7 +13,7 @@ class FeaturedArtistsController < ApplicationController
   end
 
   def current
-	#@featured_artist = FeaturedArtist.order("created_at").last
+    @featured_artist = FeaturedArtist.last
   end
 
 

@@ -8,13 +8,13 @@ module Casein
 
     # Filename of logo image. Ideally, it should be a transparent PNG around 140x30px
     def casein_config_logo
-      'logo.png'
+      #'logo.png'
     end
 
     # The server hostname where Casein will run
     def casein_config_hostname
       if Rails.env.production?
-        'http://www.caseincms.com'
+		'http://www.bloomjuiceco.com'
       else
         'http://0.0.0.0:3000'
       end

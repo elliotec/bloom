@@ -36,8 +36,8 @@
         </li>
         <li class="nav-link more"><a href="javascript:void(0)">Featured Artist</a>
           <ul class="submenu">
-			<li><%= link_to "Current", featured_artists_path %></li>
-            <li><a href="javascript:void(0)">All Artists</a></li>
+            <li><%= link_to "Current", featured_artist_current_path(:featured_artist_id) %></li>
+            <li><%= link_to "All Artists", featured_artists_path %></li>
           </ul>
         </li>
         <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>

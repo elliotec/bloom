@@ -1,3 +1,28 @@
 // Place all the styles related to the FeaturedArtists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.featured_artist-wrapper{
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  h2 {
+    text-align: center;
+    color: $indigo;
+    padding:0.5em;
+    font-size: 2.5em;
+  }
+  .featured_artist-photo {
+    padding: 0.5em;
+    text-align: center;
+    img {
+      max-height: 500px;
+      max-width: 500px;
+    }
+  }
+  .featured_artist-info{
+    text-align:center;
+    h1 {
+      font-size: 1.75em;
+    }
+  }
+}

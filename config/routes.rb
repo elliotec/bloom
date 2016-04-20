@@ -1,21 +1,18 @@
 Rails.application.routes.draw do
-
   resources :featured_artists do
-	get 'current'
+    get 'current', to: 'featured_artists#current'
   end
+
   resources :cleanses
 
   resources :juices
-  resources :products
 	#Casein routes
 	namespace :casein do
 		resources :featured_artists
 		resources :cleanses
 		resources :juices
-		resources :products
 	end
 
-  resources :products
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -23,7 +20,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get 'featured_artist/current', to: 'featured_artist#current'
+  #get 'featured_artists/current', to: 'featured_artists#current'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

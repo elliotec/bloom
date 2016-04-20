@@ -1,8 +1,7 @@
 <section class="featured_artist-wrapper">
+  <h2>Featured Artist</h2>
   <div class="featured_artist-photo">
     <%= image_tag @featured_artist.photo1.url(:large) %>
-  </div>
-  <div class="featured_artist-photo">
     <%= image_tag @featured_artist.photo2.url(:large) %>
   </div>
 
@@ -11,7 +10,7 @@
 
     <p><%= @featured_artist.bio %></p>
 
-	<p><%= @featured_artist.link %></p>
+	View their work at <a href="#{@featured_artist.link}"><%= @featured_artist.link %></a>
 
   </div>
 </section>
