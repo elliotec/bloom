@@ -31,7 +31,7 @@ gem 'simple_form'
 gem 'figaro'
 gem 'paperclip'
 gem 'casein'
-
+gem 'aws-sdk'
 gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
 gem 'growl' if /darwin/ =~ RUBY_PLATFORM
 group :development, :test do
