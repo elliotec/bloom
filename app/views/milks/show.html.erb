@@ -1,0 +1,21 @@
+<section class="milk-wrapper">
+  <div class="milk-photo">
+    <%= image_tag @milk.photo.url(:medium) %>
+  </div>
+
+  <div class="milk-info">
+    <h1><%= @milk.name %></h1>
+
+    <h3>$<%= @milk.price %>0</h3>
+
+    <p><%= @milk.ingredients%></p>
+
+    <p><%= @milk.long_description %></p>
+
+    <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and recieve your deposit back.</small></p>
+
+    <p><small>16oz / 543ml</small></p>
+  </div>
+</section>
+
+

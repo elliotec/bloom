@@ -1,20 +1,20 @@
 <section class="cleanse-wrapper">
   <div class="cleanse-photo">
-    <%= image_tag @cleanse.photo.url(:large) %>
-  </div>
-  <div class="cleanse-photo">
-    <%= image_tag @cleanse.photo2.url(:large) %>
+    <%= image_tag @cleanse.photo.url(:medium) %>
   </div>
 
   <div class="cleanse-info">
-    <h1><%= @cleanse.name1 %></h1>
+    <h1><%= @cleanse.name %></h1>
 
-    <p><%= @cleanse.bio1 %></p>
+    <h3>$<%= @cleanse.price %>0</h3>
 
-    <h1><%= @cleanse.name2 %></h1>
+    <p><%= @cleanse.ingredients%></p>
 
-	<p><%= @cleanse.bio2 %></p>
+    <p><%= @cleanse.long_description %></p>
 
+    <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and recieve your deposit back.</small></p>
+
+    <p><small>16oz / 543ml</small></p>
   </div>
 </section>
 

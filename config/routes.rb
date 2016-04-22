@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :elixers
+  resources :milks
   resources :featured_artists do
     get 'current', to: 'featured_artists#current'
   end
@@ -8,6 +10,8 @@ Rails.application.routes.draw do
   resources :juices
 	#Casein routes
 	namespace :casein do
+		resources :milks
+		resources :elixers
 		resources :featured_artists
 		resources :cleanses
 		resources :juices

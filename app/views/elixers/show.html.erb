@@ -1,0 +1,21 @@
+<section class="elixer-wrapper">
+  <div class="elixer-photo">
+    <%= image_tag @elixer.photo.url(:medium) %>
+  </div>
+
+  <div class="elixer-info">
+    <h1><%= @elixer.name %></h1>
+
+    <h3>$<%= @elixer.price %>0</h3>
+
+    <p><%= @elixer.ingredients%></p>
+
+    <p><%= @elixer.long_description %></p>
+
+    <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and recieve your deposit back.</small></p>
+
+    <p><small>16oz / 543ml</small></p>
+  </div>
+</section>
+
+
