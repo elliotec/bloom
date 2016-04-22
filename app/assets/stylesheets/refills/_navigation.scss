@@ -35,7 +35,8 @@ header.navigation {
 	  padding: 0.5em;
 	  color: lighten($base-font-color, 30%);
 	}
-	max-height: 1em;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding + 1;
   }
 
   .navigation-wrapper {
@@ -48,7 +49,6 @@ header.navigation {
     float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
-    padding-right: 2em;
 
 
     img {

@@ -2,21 +2,21 @@
 
 module Casein
   class JuicesController < Casein::CaseinController
-  
+
     ## optional filters for defining usage according to Casein::AdminUser access_levels
     # before_filter :needs_admin, :except => [:action1, :action2]
     # before_filter :needs_admin_or_current_user, :only => [:action1, :action2]
-  
+
     def index
       @casein_page_title = 'Juices'
   		@juices = Juice.order(sort_order(:name)).paginate :page => params[:page]
     end
-  
+
     def show
       @casein_page_title = 'View juice'
       @juice = Juice.find params[:id]
     end
-  
+
     def new
       @casein_page_title = 'Add a new juice'
     	@juice = Juice.new
@@ -24,7 +24,7 @@ module Casein
 
     def create
       @juice = Juice.new juice_params
-    
+
       if @juice.save
         flash[:notice] = 'Juice created'
         redirect_to casein_juices_path
@@ -33,12 +33,12 @@ module Casein
         render :action => :new
       end
     end
-  
+
     def update
       @casein_page_title = 'Update juice'
-      
+
       @juice = Juice.find params[:id]
-    
+
       if @juice.update_attributes juice_params
         flash[:notice] = 'Juice has been updated'
         redirect_to casein_juices_path
@@ -47,7 +47,7 @@ module Casein
         render :action => :show
       end
     end
- 
+
     def destroy
       @juice = Juice.find params[:id]
 
@@ -55,9 +55,9 @@ module Casein
       flash[:notice] = 'Juice has been deleted'
       redirect_to casein_juices_path
     end
-  
+
     private
-      
+
       def juice_params
         params.require(:juice).permit(:name, :short_description, :long_description, :price, :photo, :ingredients)
       end
