@@ -3,7 +3,7 @@
 <div class="grid-items-lines">
   <% @elixers.each do |elixer| %>
     <%= link_to elixer, class: 'grid-item' do %>
-      <%= image_tag elixer.photo.url(:large) %>
+      <%= image_tag elixer.photo.url(:medium) %>
       <h1><%= elixer.name %></h1>
     <% end %>
   <% end %>

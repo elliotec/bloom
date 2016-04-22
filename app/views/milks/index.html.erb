@@ -1,9 +1,9 @@
 <section class="juices-wrapper">
 <h2>All milks</h2>
 <div class="grid-items-lines">
-  <% @milks.each do |elixer| %>
+  <% @milks.each do |milk| %>
     <%= link_to milk, class: 'grid-item' do %>
-      <%= image_tag milk.photo.url(:large) %>
+      <%= image_tag milk.photo.url(:medium) %>
       <h1><%= milk.name %></h1>
     <% end %>
   <% end %>

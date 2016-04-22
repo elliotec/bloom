@@ -3,7 +3,7 @@
 <div class="grid-items-lines">
   <% @cleanses.each do |cleanse| %>
     <%= link_to cleanse, class: 'grid-item' do %>
-      <%= image_tag cleanse.photo.url(:large) %>
+      <%= image_tag cleanse.photo.url(:medium) %>
       <h1><%= cleanse.name %></h1>
     <% end %>
   <% end %>
