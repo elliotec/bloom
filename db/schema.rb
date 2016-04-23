@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422034529) do
+ActiveRecord::Schema.define(version: 20160423210040) do
 
   create_table "casein_admin_users", force: :cascade do |t|
     t.string   "login",                           null: false
@@ -77,6 +77,8 @@ ActiveRecord::Schema.define(version: 20160422034529) do
     t.string   "photo2_content_type"
     t.integer  "photo2_file_size"
     t.datetime "photo2_updated_at"
+    t.string   "bio2"
+    t.string   "link2"
   end
 
   create_table "juices", force: :cascade do |t|

@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   resources :juices
 	#Casein routes
 	namespace :casein do
+		resources :featured_artists
 		resources :milks
 		resources :elixers
-		resources :featured_artists
 		resources :cleanses
 		resources :juices
 	end

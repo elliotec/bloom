@@ -9,9 +9,9 @@
     <h1><%= @featured_artist.name %></h1>
 
     <p><%= @featured_artist.bio %></p>
+    <p><%= @featured_artist.bio2 %></p>
 
-    View their work at <a href="http://<%= @featured_artist.link %>" target="_blank"><%= @featured_artist.link %></a> and <a href="http://aaronglasson.com" target="_blank">aaronglasson.com</a>
-
+    View their work at <a href="http://<%= @featured_artist.link %>" target="_blank"><%= @featured_artist.link %></a><% if @featured_artist.link2  %>and <a href="http://<%= @featured_artist.link2 %>" target="_blank"><%= @featured_artist.link2 %></a><% end %>
   </div>
 </section>
 

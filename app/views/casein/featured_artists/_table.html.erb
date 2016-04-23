@@ -5,7 +5,9 @@
 		<tr>
 			<th><%= casein_sort_link "Name", :name %></th>
 			<th><%= casein_sort_link "Bio", :bio %></th>
+			<th><%= casein_sort_link "Bio", :bio2 %></th>
 			<th><%= casein_sort_link "Link", :link %></th>
+			<th><%= casein_sort_link "Link", :link2 %></th>
 			<th><%= casein_sort_link "Photo1", :photo1 %></th>
 			<th><%= casein_sort_link "Photo2", :photo2 %></th>
 			<th>&nbsp;</th>
@@ -16,7 +18,9 @@
 		<tr>
 			<td><%= casein_table_cell_link featured_artist.name, casein_featured_artist_path(featured_artist) %></td>
 			<td><%= casein_table_cell_link featured_artist.bio, casein_featured_artist_path(featured_artist) %></td>
+			<td><%= casein_table_cell_link featured_artist.bio2, casein_featured_artist_path(featured_artist) %></td>
 			<td><%= casein_table_cell_link featured_artist.link, casein_featured_artist_path(featured_artist) %></td>
+			<td><%= casein_table_cell_link featured_artist.link2, casein_featured_artist_path(featured_artist) %></td>
 			<td><%= casein_table_cell_link featured_artist.photo1, casein_featured_artist_path(featured_artist) %></td>
 			<td><%= casein_table_cell_link featured_artist.photo2, casein_featured_artist_path(featured_artist) %></td>
 			<td class="delete">

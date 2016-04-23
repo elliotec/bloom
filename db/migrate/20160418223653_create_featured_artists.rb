@@ -4,7 +4,7 @@ class CreateFeaturedArtists < ActiveRecord::Migration
       t.string :name
       t.string :bio
       t.string :link
-      
+
       t.timestamps
     end
   end

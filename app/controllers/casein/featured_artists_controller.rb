@@ -59,7 +59,7 @@ module Casein
     private
 
       def featured_artist_params
-        params.require(:featured_artist).permit(:name, :bio, :link, :photo1, :photo2)
+        params.require(:featured_artist).permit(:name, :bio, :bio2, :link, :link2, :photo1, :photo2)
       end
 
   end
