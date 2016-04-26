@@ -4,7 +4,7 @@
       <%= image_tag juice.photo.url(:medium) %>
       <h1><%= juice.name %></h1>
       <p><%= juice.short_description %></p>
-      <p>$<%= juice.price %>0</p>
+      <p>$<%= juice.price.round %></p>
     <% end %>
   <% end %>
   <div class="right-cover"></div>
