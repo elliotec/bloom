@@ -1,3 +1,7 @@
+<ul class="subnav">
+  <li><%= link_to "Juices", juices_path %></li>
+  <li><%= link_to "Milks", milks_path %></li>
+  <li><%= link_to "Elixirs", elixers_path %></li></ul>
 <section class="juice-wrapper">
   <div class="juice-photo">
     <%= image_tag @juice.photo.url(:medium) %>
@@ -16,10 +20,10 @@
 
     <p class="size"><small>16oz / 543ml</small></p>
 
-    <% unless !@juice.previous %>
+    <% if @juice.previous %>
       <p class="previous"><%= link_to "< Previous", @juice.previous %></p>
     <% end %>
-    <% unless !@juice.next %>
+    <% if @juice.next %>
       <p class="next"><%= link_to "Next >", @juice.next, class: "next" %></p>
     <% end %>
   </div>

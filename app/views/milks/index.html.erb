@@ -1,5 +1,9 @@
 <section class="juices-wrapper">
-<h2>All Milks</h2>
+<ul class="subnav">
+  <li><%= link_to "Juices", juices_path %></li>
+  <li><%= link_to "Milks", milks_path %></li>
+  <li><%= link_to "Elixirs", elixers_path %></li></ul>
+<h2>Milks</h2>
 <div class="grid-items-lines">
   <% @milks.each do |milk| %>
     <%= link_to milk, class: 'grid-item' do %>

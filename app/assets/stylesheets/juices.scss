@@ -10,8 +10,6 @@
   }
 }
 .juice-wrapper{
-  margin: 3em;
-
   .juice-photo{
     @include media($large-screen){
       @include outer-container;

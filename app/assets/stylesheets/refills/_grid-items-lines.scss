@@ -27,7 +27,7 @@
   $grid-item-columns: 3;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
-  $grid-item-height: 30em;
+  $grid-item-height: 33em;
 
   @include clearfix;
   position: relative;
@@ -66,22 +66,5 @@
       color: transparentize($grid-item-color, 0.4);
       text-align: center;
     }
-
-  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
-  /*.bottom-cover {*/
-  /*  background: $grid-items-background;*/
-  /*  bottom: 0px;*/
-  /*  height: 3px;*/
-  /*  position: absolute;*/
-  /*  width: 100%;*/
-  /*}*/
-
-  /*.right-cover {*/
-  /*  background: $grid-items-background;*/
-  /*  height: 100%;*/
-  /*  position: absolute;*/
-  /*  right: 0px;*/
-  /*  width: 4px;*/
-  /*}*/
 }
 
