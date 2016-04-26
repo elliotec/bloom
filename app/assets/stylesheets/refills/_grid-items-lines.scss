@@ -49,14 +49,15 @@
 
   .grid-item img {
       display: block;
-      height: 19em;
+      max-height: 20em;
       margin-bottom: 1.2em;
       margin: 0 auto;
     }
 
   .grid-item h1 {
       color: $grid-item-color;
-      font-size: 1.3em;
+      font-size: 1.1em;
+      margin-top: 0.5em;
       margin-bottom: 0.4em;
       text-align: center;
     }

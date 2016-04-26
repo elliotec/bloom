@@ -32,7 +32,12 @@
       font-size: 0.66em;
     }
     .next {
+      display: inline-block;
       text-align: right;
+      margin-left: 2em;
+    }
+    .previous {
+      display: inline-block;
     }
     @include media($large-screen){
       @include outer-container;
