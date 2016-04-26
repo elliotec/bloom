@@ -11,6 +11,7 @@
 }
 .juice-wrapper{
   margin: 3em;
+
   .juice-photo{
     @include media($large-screen){
       @include outer-container;
@@ -30,11 +31,15 @@
     small {
       font-size: 0.66em;
     }
+    .next {
+      text-align: right;
+    }
     @include media($large-screen){
       @include outer-container;
       @include span-columns(4);
       text-align: left;
       margin-top: 3.75em;
+
       h1 {
         font-size: 1.7em;
       }
