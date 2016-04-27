@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   resources :elixers
   resources :milks
   resources :featured_artists do
