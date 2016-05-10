@@ -3,11 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .welcome-wrapper{
+  margin: 0 auto;
   position: relative;
   background: url("beets.jpg") no-repeat center;
   background-size: cover;
   height:45em;
   z-index: 1;
+  @include media($medium-screen){
+    max-width: 80%;
+  }
   .form-wrap {
     position: absolute;
     @include media($medium-screen){

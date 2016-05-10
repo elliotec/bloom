@@ -27,32 +27,43 @@ header.navigation {
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   z-index: 999;
 
   .social {
 	i {
 	  padding: 0.5em;
+      position: relative;
+      top: 1em;
+      right: 0.5em;
 	  color: lighten($base-font-color, 30%);
 	}
     max-height: $navigation-height;
-    padding-left: $navigation-padding + 1;
   }
 
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
-    z-index: 9999;
+    z-index: 99999;
+    @include media($large-screen){
+      max-width: 100%;
+    }
   }
 
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: $navigation-padding;
+    position: relative;
+    display: inline-block;
 
+    @include media($large-screen){
+      right: 3.5em;
+    }
 
     img {
       max-height: $navigation-height;
+
       @include media($large-screen){
         max-height: $nav-height-large-screen;
       }

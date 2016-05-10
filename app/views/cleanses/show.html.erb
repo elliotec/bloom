@@ -1,7 +1,7 @@
 <ul class="subnav">
-  <li><%= link_to "Juices", juices_path %></li>
-  <li><%= link_to "Milks", milks_path %></li>
-  <li><%= link_to "Elixirs", elixers_path %></li></ul>
+  <li><%= link_to "Cleanses", cleanses_path %></li>
+  <li><%= link_to "Cleanse Process", milks_path %></li>
+  <li><%= link_to "Cleanse FAQ", page_path('cleanse_faq') %></li></ul>
 <section class="juice-wrapper">
   <div class="juice-photo">
     <%= image_tag @cleanse.photo.url(:medium) %>
@@ -12,9 +12,13 @@
 
     <h3>$<%= @cleanse.price.round %></h3>
 
+    <p><%= @cleanse.long_description %></p>
+
+    <p><strong>This cleanse includes:</strong></p>
+
     <p><%= @cleanse.ingredients %></p>
 
-    <p><%= @cleanse.long_description %></p>
+    <p>All Bloom Juice cleanses come with our detailed cleanse guide and thermal tote. Please visit our <a href="#">Cleanse Process</a> page for juicy tips before, during, and after your cleanse. Prices are per day.</p>
 
     <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and receive your deposit back.</small></p>
 

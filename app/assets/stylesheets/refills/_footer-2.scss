@@ -1,3 +1,6 @@
+.footer-wrap{
+  text-align: center;
+}
 .footer-2 {
   $base-spacing: 1.5em !default;
   $base-accent-color: #333 !default;
@@ -26,12 +29,15 @@
 
   background: $footer-background;
   padding: $base-spacing;
-  width: 100%;
+  width: 80%;
+
   display: inline-block;
+  margin:0 auto;
 
   .footer-logo {
-    margin-right: 1em;
     margin-bottom: 1em;
+    position: relative;
+    right: 3em;
 
     @include media($large-screen) {
       float: left;
@@ -78,6 +84,8 @@
     @include media($large-screen) {
       float: right;
     }
+    position: relative;
+    left: 9em;
 
     li {
       font-size: 0.8em;
