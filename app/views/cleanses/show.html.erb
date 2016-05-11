@@ -1,9 +1,9 @@
 <ul class="subnav">
   <li><%= link_to "Cleanses", cleanses_path %></li>
-  <li><%= link_to "Cleanse Process", milks_path %></li>
+  <li><%= link_to "Cleanse Process", page_path('cleanse_process') %></li>
   <li><%= link_to "Cleanse FAQ", page_path('cleanse_faq') %></li></ul>
 <section class="juice-wrapper">
-  <div class="juice-photo">
+  <div class="juice-photo cleanse-photo">
     <%= image_tag @cleanse.photo.url(:medium) %>
   </div>
 
@@ -16,11 +16,11 @@
 
     <p><strong>This cleanse includes:</strong></p>
 
-    <p><%= @cleanse.ingredients %></p>
+    <p><%= simple_format(@cleanse.ingredients) %></p>
 
-    <p>All Bloom Juice cleanses come with our detailed cleanse guide and thermal tote. Please visit our <a href="#">Cleanse Process</a> page for juicy tips before, during, and after your cleanse. Prices are per day.</p>
+    <p>All Bloom Juice cleanses come with our detailed cleanse guide and thermal tote. Please visit our <%= link_to "Cleanse Process", page_path('cleanse_process')%> page for juicy tips before, during, and after your cleanse. Prices are per day.</p>
 
-    <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and receive your deposit back.</small></p>
+    <p><small>.50c bottle deposit is already included in this price. $3.50 total per day</small></p>
 
     <p class="size"><small>16oz / 543ml</small></p>
 

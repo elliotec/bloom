@@ -18,6 +18,7 @@
   }
 }
 .juice-wrapper{
+  font-size: .9em;
   .juice-photo{
     @include media($large-screen){
       @include outer-container;
@@ -26,6 +27,15 @@
       text-align: right;
       img {
         width: 400px;
+      }
+    }
+  }
+  .cleanse-photo{
+    @include media($large-screen){
+      img{
+        width: 500px;
+        position: relative;
+        top: 8em;
       }
     }
   }
