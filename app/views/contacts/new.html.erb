@@ -4,6 +4,7 @@
     <%= simple_form_for @contact do |f|  %>
       <%= f.input :name, required: true %>
       <%= f.input :email, required: true %>
+      <%= f.input :subject, required: true %>
       <%= f.input :message, as: :text,  required: true %>
       <% flash.each do |key, value| %>
       <div class="alert"><%= value %></div>
@@ -27,8 +28,8 @@
       <a href="mailto:hello@bloomjuiceco.com">hello@bloomjuiceco.com</a>
 
       <h3>ADDRESS</h3>
-      <p>317 NW Gilman Blvd. Suite 3</p>
-      <p>Issaquah, WA 98027</p>
+      <a href="https://www.google.com/maps/dir/current+location/317+NW+Gilman+Blvd+%233,+Issaquah,+WA+98027/@44.1423889,-121.4509654,6z"><p>317 NW Gilman Blvd. Suite 3</p>
+        <p>Issaquah, WA 98027</p></a>
       <p>We are located in the warm and bright retail district of Gilman Village. Find us on the main street of Gilman Blvd, right next door to Village Green Yoga.</p>
   </div>
   <div class="connect">
@@ -36,6 +37,6 @@
   </div>
   <div class="copyright">
     <p>&copy;BloomJuiceCo</p>
-    <%#<p><span>Made by <a href="http://elliotec.com">elliotec</a></span></p>%>
+    <p><span>Made by <a href="http://elliotec.com">elliotec</a></span></p>
   </div>
 </section>
