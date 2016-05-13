@@ -11,6 +11,8 @@
     <%= link_to cleanse, class: 'grid-item-big' do %>
       <%= image_tag cleanse.photo.url(:medium) %>
       <h1><%= cleanse.name %></h1>
+      <p><%= cleanse.short_description %></p>
+      <p>$<%= cleanse.price.round %></p>
     <% end %>
   <% end %>
   <div class="right-cover"></div>

@@ -9,6 +9,8 @@
     <%= link_to milk, class: 'grid-item' do %>
       <%= image_tag milk.photo.url(:medium) %>
       <h1><%= milk.name %></h1>
+      <p><%= milk.short_description %></p>
+      <p>$<%= milk.price.round %></p>
     <% end %>
   <% end %>
   <div class="right-cover"></div>
