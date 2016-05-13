@@ -29,7 +29,8 @@ header.navigation {
   min-height: $navigation-height;
   width: 80%;
   margin: 0 auto;
-  z-index: 999;
+  position:relative;
+  z-index: 9999999999;
 
   .social {
 	i {
@@ -165,6 +166,7 @@ header.navigation {
   .active-nav-item a {
     border-bottom: 1px solid $navigation-active-link-color;
     padding-bottom: 3px;
+  z-index: 9999999999;
   }
 
   // Sub menus
@@ -172,6 +174,7 @@ header.navigation {
   li.more.nav-link {
     padding-right: 0;
 
+  z-index: 9999999999;
     @include media($large-screen) {
       padding-right: $navigation-submenu-padding;
     }
@@ -192,6 +195,7 @@ header.navigation {
     overflow: visible;
     padding-right: 0;
 
+  z-index: 9999999999;
     a {
       padding-right: 0.8em;
     }
@@ -227,6 +231,7 @@ header.navigation {
     padding-left: 0;
     border: 1px solid lighten($dark-gray, 70%);
 
+  z-index: 9999999999;
     @include media($horizontal-bar-mode) {
       left: -$navigation-submenu-padding;
       position: absolute;
@@ -237,6 +242,7 @@ header.navigation {
       @include media($horizontal-bar-mode) {
         left: $navigation-submenu-width - 0.2em;
         top: 0;
+  z-index: 9999999999;
       }
     }
 
@@ -244,6 +250,7 @@ header.navigation {
       display: block;
       padding-right: 0;
 
+  z-index: 9999999999;
       @include media($horizontal-bar-mode) {
         line-height: $nav-height-large-screen / 3.5;
 

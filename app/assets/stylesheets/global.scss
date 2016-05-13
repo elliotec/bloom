@@ -1,11 +1,44 @@
 .subnav {
   text-align: right;
   margin-right: 10%;
-    li{
-      display: inline-block;
-      margin-right: 2em;
-      text-align: right;
-      padding-top: 1em;
-    }
+  li{
+    display: inline-block;
+    margin-right: 2em;
+    text-align: right;
+    padding-top: 1em;
   }
-
+}
+.our_values{
+  max-width: 80%;
+  margin: 0 auto;
+  text-align:center;
+  h2{
+    color: $carrot;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+  }
+  img {
+    margin-bottom: 2em;
+  }
+  h3{
+    font-size: 1.7em;
+  }
+  padding-bottom: 3em;
+}
+.our_story{
+  max-width: 80%;
+  margin:0 auto;
+  h2{
+    text-align:center;
+    color: $carrot;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+  }
+  img {
+    float: left;
+    padding: 1em;
+  }
+  p {
+    padding: 0.8em;
+  }
+}

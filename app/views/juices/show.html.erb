@@ -8,13 +8,13 @@
   </div>
 
   <div class="juice-info">
-    <h1><%= @juice.name %></h1>
+    <h1><%= simple_format(@juice.name) %></h1>
 
     <h3>$<%= @juice.price.round %></h3>
 
-    <p><%= @juice.ingredients %></p>
+    <p><%= simple_format(@juice.ingredients) %></p>
 
-    <p><%= @juice.long_description %></p>
+    <p><%= simple_format(@juice.long_description) %></p>
 
     <p><small>.50c bottle deposit is already included in this price. Please recycle this bottle by bringing it back to our shop and receive your deposit back.</small></p>
 

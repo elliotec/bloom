@@ -8,11 +8,11 @@
   </div>
 
   <div class="juice-info">
-    <h1><%= @cleanse.name %></h1>
+    <h1><%= simple_format(@cleanse.name) %></h1>
 
     <h3>$<%= @cleanse.price.round %></h3>
 
-    <p><%= @cleanse.long_description %></p>
+    <p><%= simple_format(@cleanse.long_description) %></p>
 
     <p><strong>This cleanse includes:</strong></p>
 

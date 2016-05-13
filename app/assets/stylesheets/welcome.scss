@@ -13,6 +13,7 @@
     max-width: 80%;
   }
   .form-wrap {
+    z-index: 10;
     position: absolute;
     @include media($medium-screen){
       top:45%;
