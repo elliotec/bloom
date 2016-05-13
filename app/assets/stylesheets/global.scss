@@ -42,3 +42,73 @@
     padding: 0.8em;
   }
 }
+.contact-us{
+  max-width: 80%;
+  margin: 0 auto;
+  h2{
+    text-align:center;
+    color: $carrot;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+  }
+  abbr {
+    border:none;
+    text-decoration: none;
+    color: #c0392b;
+  }
+
+  .message {
+    width: 100%;
+    padding: 1em;
+    margin-right: none;
+    float: left;
+
+    @include media($medium-screen){
+      width: 68%;
+    }
+    input{
+      margin-bottom: 3em;
+    }
+    textarea{
+      height: 13em;
+    }
+
+  }
+  .alert, .error {
+    color: #e74c3c;
+  }
+  .info{
+    padding: 1em;
+    float: right;
+    width: 100%;
+    @include media($medium-screen){
+      max-width: 30%;
+    }
+    h3 {
+      padding-top: 1em;
+      line-height: .75;
+    }
+  }
+  .connect{
+    padding: 1em;
+    clear:both;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+
+  }
+  .copyright{
+    margin-top: 2em;
+    font-size: 13px;
+    text-align: center;
+    span {
+      font-size: 9px;
+    }
+    a{
+      font-family: 'Helvetica', sans-serif;
+      color: #27ae60;
+    }
+
+  }
+}
+

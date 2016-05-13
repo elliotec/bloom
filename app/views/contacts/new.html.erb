@@ -1,0 +1,41 @@
+<section class="contact-us">
+  <h2>Contact Us</h2>
+  <div class="message">
+    <%= simple_form_for @contact do |f|  %>
+      <%= f.input :name, required: true %>
+      <%= f.input :email, required: true %>
+      <%= f.input :message, as: :text,  required: true %>
+      <% flash.each do |key, value| %>
+      <div class="alert"><%= value %></div>
+      <% end %>
+      <br/>
+      <%= f.button :submit, 'Send message', class: "button" %>
+    <% end  %>
+  </div>
+  <div class="info">
+      <h3>STORE HOURS</h3>
+      <p>7am - 5:30pm</p>
+      <p>Monday - Saturday</p>
+
+      <p>9am - 2pm</p>
+      <p>Sunday</p>
+
+      <h3>TELEPHONE</h3>
+      <p>coming soon :)</p>
+
+      <h3>EMAIL</h3>
+      <a href="mailto:hello@bloomjuiceco.com">hello@bloomjuiceco.com</a>
+
+      <h3>ADDRESS</h3>
+      <p>317 NW Gilman Blvd. Suite 3</p>
+      <p>Issaquah, WA 98027</p>
+      <p>We are located in the warm and bright retail district of Gilman Village. Find us on the main street of Gilman Blvd, right next door to Village Green Yoga.</p>
+  </div>
+  <div class="connect">
+    <p>Connect with us! Stay in touch through <a href="http://instagram.com/bloomjuiceco">Instagram</a> and <a href="http://facebook.com/bloomjuiceco">Facebook</a> @BloomJuiceCo</p>
+  </div>
+  <div class="copyright">
+    <p>&copy;BloomJuiceCo</p>
+    <p><span>Made by <a href="http://elliotec.com">elliotec</a></span></p>
+  </div>
+</section>
