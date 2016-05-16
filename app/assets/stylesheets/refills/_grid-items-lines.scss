@@ -39,11 +39,12 @@
     height: $grid-item-height;
     overflow: hidden;
     outline: none;
-    padding: 3em;
+    padding: 1em;
     width: 100%;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
+      padding: 3em;
     }
   }
 
@@ -51,14 +52,15 @@
     @include transition (all 0.2s ease-in-out);
     cursor: pointer;
     float: left;
-    height: $grid-item-height;
+    height: 25em;
     overflow: hidden;
     outline: none;
-    padding: 3em;
+    padding: 1em;
     width: 100%;
 
       @include media($large-screen) {
         @include grid-item-columns($grid-item-big-columns);
+        padding: 1em;
       }
     }
 
