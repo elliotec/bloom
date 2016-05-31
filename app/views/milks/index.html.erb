@@ -4,6 +4,7 @@
   <li><%= link_to "Milks", milks_path %></li>
   <li><%= link_to "Elixirs", elixers_path %></li></ul>
 <h2>Milks</h2>
+<p class="subtitle">Click on individual product for ingredients and health benefits. All of our juices are 100% organic, raw and cold-pressed. Enjoy!</p>
 <div class="grid-items-lines">
   <% @milks.each do |milk| %>
     <%= link_to milk, class: 'grid-item' do %>
