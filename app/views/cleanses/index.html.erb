@@ -5,7 +5,7 @@
   <li><%= link_to "Cleanse FAQ", page_path('cleanse_faq') %></li>
 </ul>
 <h2>Cleanses</h2>
-<p class="subtitle">Juice cleansing on a regular basis is an effective and natural way of maintaining optimal health. Whether it's your first cleanse or tenth, we have you covered every step of the way. Our cleanses are designed to nourish your body through pure, organic, whole foods. Click on individual photos for cleanse details. For specific questions, please refer to our <%= link_to "FAQ", page_path('cleanse_faq'), target: "_blank"%> page and <%= link_to "Cleanse Process", page_path('cleanse_process'), target: "_blank" %> section. Cheers to your health!<br><br> Click on individual product for ingredients and health benefits. All of our juices are 100% organic, raw and cold-pressed. Enjoy!</p>
+<p class="subtitle">Juice cleansing on a regular basis is an effective and natural way of maintaining optimal health. Whether it's your first cleanse or tenth, we have you covered every step of the way. Our cleanses are designed to nourish your body through pure, organic, whole foods. Click on individual photos for cleanse details. For specific questions, please refer to our <%= link_to "FAQ", page_path('cleanse_faq'), target: "_blank"%> page and <%= link_to "Cleanse Process", page_path('cleanse_process'), target: "_blank" %> section. Cheers to your health!<br></p>
 <div class="grid-items-lines">
   <% @cleanses.each do |cleanse| %>
     <%= link_to cleanse, class: 'grid-item-big' do %>
